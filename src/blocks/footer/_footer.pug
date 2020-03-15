@@ -33,14 +33,22 @@ mixin footer
                         .footer__subtitle Угода користувача <br> <br> Політика конфіденційності
                 .col-4
                     .footer__title.footer__company Компания
-                    .footer__subtitle.footer__company Послуги<br><br>Про компанію<br><br> Партнери<br><br> Контакти
+                    ul.footer__subtitle.footer__company 
+                        li.footer__help 
+                            a.footer__link(href="#" target="blank")  Послуги
+                        li.footer__help
+                            a.footer__link(href="#" target="blank") Про компанію
+                        li.footer__help 
+                            a.footer__link(href="#" target="blank") Партнери
+                        li.footer__help
+                            a.footer__link(href="#" target="blank") Контакти
                 .col-4
                     .footer__title.footer__text Мы в соцсетях
                     ul.footer__image.footer__text
                         li.footer__logo 
-                            a.footer__link <i class="fab fa-facebook-f"></i>
+                            a.footer__link(href="https://www.facebook.com/") <i class="fab fa-facebook-f"></i>
                         li.footer__logo  
-                            a.footer__link <i class="fab fa-instagram"></i>
+                            a.footer__link(href="https://www.instagram.com/") <i class="fab fa-instagram"></i>
     copyright.copyright
         .container
             .row
