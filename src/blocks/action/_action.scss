@@ -1,16 +1,18 @@
-.action{
+.action {
 
-    &__panel {color:white;
+    &__panel {
+        color: white;
         padding: 124px;
         background: #6E6E6F;
     }
 
-    
-    
+
+
 }
-.btn{
-background: #E92429;
-padding-right:50px
-padding-left 200px;
-box-shadow: 0px 0px 1000px
+
+.btn:hover {
+    color: rgb(35, 240, 8);
+    background: #E92429;
+    padding-right: 50px padding-left 200px;
+    box-shadow: 0px 0px 1000px
 }
