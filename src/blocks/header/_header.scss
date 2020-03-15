@@ -2,7 +2,50 @@
 {
     padding: 30px;
     background-color: #242424;
+
+    @media(max-width: 376px)
+    {
+        padding: 10px;         
+    }    
+
+
+    &__block
+    {
+        position: relative;
+    }
+
+    &__adaptive-nav
+    {
+        
+        position: absolute;
+        top: 24%;
+        width: 100%;
+        display: none;
+    }
+
+    &__list
+    {
+        background-color: #242424;
+        width: 100%;
+        display: block;
+        list-style: none;
+    }
+
+    &__items
+    {
+        font-family: 'Roboto', serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;       
+        text-align: center;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        color: #FFFFFF;
+    }
 }
+
+
+
 .mainimg
 {
     filter: grayscale(100%);
