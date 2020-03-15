@@ -1,0 +1,17 @@
+.support {
+    text-align: center;
+    &__title{font-family: Roboto;
+        font-style: normal;
+        font-weight: 900;
+        font-size: 32px;
+        line-height: 48px;
+        /* identical to box height, or 150% */
+        
+        text-align: center;
+        text-transform: uppercase;
+        
+        /* black */
+        
+        color: #232323;
+    }
+}
