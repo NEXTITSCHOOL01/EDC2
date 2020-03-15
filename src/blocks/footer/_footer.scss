@@ -8,7 +8,7 @@
         line-height: 118.62%;
         letter-spacing: 0.05em;
         color: #C4C4C4;
-        padding-top: 20px;
+        padding-top: 15px;
         padding-bottom: 57px;
 
     }
@@ -33,6 +33,7 @@
         width: 34px;
         height: 35px;
         padding-right: 10px;
+        text-decoration: none;
     }
     &__img{
         padding-top: 62px
@@ -43,6 +44,11 @@
     &__text{
     padding-left: 150px;
     }
+    &__help{
+        list-style-type: none;  
+        padding-bottom: 10px; 
+    }  
+    
 }
 .copyright{
     font-family: 'Roboto';
