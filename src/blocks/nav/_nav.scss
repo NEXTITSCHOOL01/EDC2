@@ -1,32 +1,30 @@
+.nav {
 
-.nav
-{
-   
     background-color: #fff;
     display: flex;
     justify-content: space-between;
     height: 67px;
 
-    &__logo
-    {
+    @media (min-width: 767px) {
+        height: 80px;
+    }
+
+    &__logo {
         padding: 16px 0px 0px 118px
-    }   
-    
-    &__block-list
-    {
+    }
+
+    &__block-list {
         list-style-type: none;
-        display:flex;
+        display: flex;
         padding: 7px 110px 0px 0px;
     }
 
-    &__block-items
-    {
+    &__block-items {
         margin: 0px 33px 0px 0px;
     }
 
-    &__block-links
-    {
-        font-family: 'Roboto',serif;        
+    &__block-links {
+        font-family: 'Roboto', serif;
         font-weight: 500;
         font-size: 12px;
         letter-spacing: 0.05em;
@@ -34,5 +32,3 @@
         color: #232323;
     }
 }
-
-
