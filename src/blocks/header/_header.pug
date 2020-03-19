@@ -1,9 +1,8 @@
 mixin header
     .header
         block
-        .header__block
-            img.mainimg(src="img/header.png", alt="" width="100%")
-            .header__adaptive-nav
+        .header__block            
+            #burghide.header__adaptive-nav.collapse 
                 ul.header__list
                     li.header__items
                         a.header__items-links послуги
@@ -13,3 +12,5 @@ mixin header
                         a.header__items-links партнеры 
                     li.header__items
                         a.header__items-links Контакти
+            img.mainimg(src="img/header.png", alt="" width="100%")
+            

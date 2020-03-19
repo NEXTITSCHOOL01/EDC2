@@ -1,7 +1,7 @@
 
 .logoimg
 {
-    @media(max-width: 1366px)
+    @media(max-width: 959px)
     {
         width: 229px;          
     }    
@@ -23,7 +23,7 @@
     &__logo
     {
         padding: 16px 0px 0px 118px;
-        @media(max-width: 1366px)
+        @media(max-width: 959px)
         {
             padding: 16px 0px 0px 26px        
         }    
@@ -34,7 +34,7 @@
         list-style-type: none;
         display:flex;
         padding: 7px 110px 0px 0px;
-        @media(max-width: 1366px)
+        @media(max-width: 959px)
         {
             display: none;
         }    
@@ -58,11 +58,12 @@
 
     &__burg
     {
+        background-image:url(../img/burger.png);
         width: 18px;
         height: 12px;
         padding: 0px 0px 0px 0px;
         display: none;   
-        @media(max-width: 1366px)
+        @media(max-width: 959px)
         {
             display: block;
             position: absolute;
