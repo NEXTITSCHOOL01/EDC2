@@ -1,0 +1,48 @@
+mixin nav
+    .nav
+        .nav__block
+            .d-flex.justify-content-between.nav__top
+                    .nav__logo
+                        img(src="img/logo.svg", alt="").nav__logosvg
+                    .nav__connect.d-flex
+                        img(src="img/call.svg", alt="").nav__calllogo
+                        .nav__text
+                            h2.nav__textnumber 800-298-0044
+                            p.nav__timetxt Office hours 7 AM - 7 PM
+                        button.nav__quotebtn(type="submit") Get a quote            
+            .nav__bottom.d-flex.justify-content-between
+                .nav__burger
+                    input(type="checkbox" checked="unchecked").menuchk#idchk
+                    label(for="idchk").menuchklbl
+                        <i class="fas fa-bars"></i>
+                    .nav__burger-listblock
+                        ul.nav__burger-list
+                            li.nav__burger-item
+                                a(href="#") Services
+                            li.nav__burger-item
+                                a(href="#") Faq/Tips
+                            li.nav__burger-item
+                                a(href="#") Reviews                         
+                            li.nav__burger-item
+                                a(href="#") locations
+                            li.nav__burger-item  
+                                a(href="#") Reservation                 
+                .nav__listblock
+                    ul.nav__list.d-flex
+                        li.nav__items
+                            a(href="#") Services
+                        li.nav__items
+                            a(href="#") Faq/Tips  
+                        li.nav__items
+                            a(href="#") Reviews
+                        li.nav__items
+                            a(href="#") locations
+                        li.nav__items
+                            a(href="#") Reservation
+                .nav__location.d-flex
+                    p.nav__regiontxt Your region:
+                    img(src="img/location.svg", alt="").nav__locsvg
+                    p.nav__locname San Jose
+            
+             
+                                 

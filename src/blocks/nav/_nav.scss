@@ -1,34 +1,298 @@
-.nav {
-
-    background-color: #fff;
-    display: flex;
-    justify-content: space-between;
-    height: 67px;
-
-    @media (min-width: 767px) {
-        height: 80px;
+.nav
+{
+    &__block
+    {
+        width: 100%;
+        padding: 24px 0px 0px 0px;
+    }
+    &__logo
+    {
+        margin: 0px 0px 0px 132px;
+        @media(max-width:814px)
+        {
+            margin: 0px 0px 30px 15px !important;
+        }
+    }
+    &__logosvg
+    {
+        padding: 16px 0px 0px 0px;
     }
 
-    &__logo {
-        padding: 16px 0px 0px 118px
+    &__connect
+    {
+        margin: 0px 132px 0px 0px !important;
+        @media(max-width:814px)
+        {
+            margin: 0px 15px 0px 0px !important;
+        }
+
+        @media (max-width:434px)
+            {
+                flex-wrap: wrap;
+                
+            }
     }
 
-    &__block-list {
-        list-style-type: none;
-        display: flex;
-        padding: 7px 110px 0px 0px;
+    &__text
+    {
+        padding: 7px 0px 0px 0px;
+        @media (max-width:434px)
+            {
+                margin: 0px auto;
+                
+            }
     }
-
-    &__block-items {
-        margin: 0px 33px 0px 0px;
-    }
-
-    &__block-links {
-        font-family: 'Roboto', serif;
-        font-weight: 500;
-        font-size: 12px;
-        letter-spacing: 0.05em;
+    &__textnumber
+    {
+        font-family:'Poppins', sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 24px;               
         text-transform: uppercase;
-        color: #232323;
+        color: #5C524B;
+        margin: 0px;
+        padding: 0px 0px 4px 0px;
     }
+    &__timetxt
+    {
+        font-family:'Poppins', sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 12px;        
+        color: #5C524B;
+    }
+
+    &__quotebtn
+    {
+        width: 170px;
+        height: 40px;
+        background: #F8C654;
+        border-radius: 30px;
+        margin: 8px 0px 0px 13px;
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 14px;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        outline: none;
+        @media (max-width:434px)
+            {
+                margin: 0px auto;
+                
+            }
+        
+    }
+
+    &__quotebtn:hover
+    {
+        background-color: rgba(255, 174, 0, 0.5);
+    }
+
+    &__calllogo
+    {
+        padding: 0px 18px 0px 0px;
+        margin: -26px 0px 0px 0px;
+        @media (max-width:434px)
+            {
+                display: none;
+                
+            }
+    }
+
+    &__text
+    {
+        padding: 6px 0px 0px 0px;
+        min-width: 193px;
+    }
+
+    
+    &__list
+    {
+        list-style-type: none;
+        padding: 0px 0px 0px 132px;
+        @media (max-width:930px)
+        {
+            padding: 0px 0px 0px 30px;
+        }
+        
+    }
+
+    &__listblock
+    {
+        @media(max-width:814px)
+        {
+           display: none !important;
+        }
+    }
+
+    &__items
+    {
+        font-family: 'Poppins',serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 21px;
+        text-transform: uppercase;
+        color: #5C524B;
+        margin: 0px 40px 0px 0px;
+
+    }
+    &__items a
+    {
+        color: #5C524B;
+        text-decoration: none;
+    }
+
+    &__items a:hover
+    {
+        opacity: 0.5;
+        text-decoration: none;
+        
+    }
+
+    &__top
+    {
+        padding: 0px 0px 15px 0px;
+        @media(max-width:814px)
+        {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+
+    &__bottom
+    {
+        padding: 33px 0px 10px 0px;
+        background: #F4F4F4;
+        position: relative;
+        
+    }
+
+    &__regiontxt
+    {
+        font-family: 'Poppins',serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 14px;
+        color: #747474;
+        
+
+    }
+    &__locsvg
+    {
+    margin: -20px 9px 0px 23px;
+    }
+
+    &__locname
+    {
+        font-family: 'Poppins',serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 14px;      
+        text-decoration-line: underline;
+        color: #AB9478;
+        
+    }
+
+    &__location
+    {
+        margin-top: -6px;
+        padding: 0px 132px 0px 0px;
+        @media (max-width:1025px)
+            {
+                padding: 0px 20px 0px 0px;
+            }
+       
+    }
+
+    &__burger
+    {
+        @media (min-width: 814px)
+        {
+            display: none;
+        }
+    }
+
+
+    .menuchk
+    {
+        display: none;
+    }
+
+    .menuchklbl
+    {
+       
+        color: #5C524B;
+        font-size: 40px;
+        height: 50px;
+        width: 50px;
+        position: absolute;
+        top: 3px;
+        left: 100px;
+        @media (max-width:382px)
+            {
+                left: 30px;
+                
+            }
+
+    }
+
+    .menuchk:checked+.menuchklbl
+    {
+        color:lightgray;
+    }
+
+
+        &__burger-listblock
+        {
+            position: absolute;
+            width: 100%;
+            top:73px;
+        }
+        &__burger-list
+        {
+            
+            list-style: none;
+            font-family: 'Poppins',serif;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 14px;
+            line-height: 21px;
+            text-transform: uppercase;
+            color: #5C524B;               
+            background: #F4F4F4;
+            margin: 0px;
+            padding: 0px;            
+            width: 100%;
+            text-align: center;        
+            transition: ease-in-out .3s;
+            transform: scaleY(-100%);
+            transform-origin: top;
+            
+        }
+
+        &__burger-item>a
+        {
+            text-decoration: none;
+            color: #5C524B;
+            
+        }
+        &__burger-item>a:hover
+        {
+            color: lightgray;
+            
+        }
+    
+        
+
+        .menuchk:checked+.menuchklbl + .nav__burger-listblock>.nav__burger-list
+        {
+            
+            transform: scaleY(0);
+        }
+
+        
+    
 }
